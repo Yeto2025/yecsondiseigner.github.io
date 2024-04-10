@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YECSON QUINTERO</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Estilos personalizados -->
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding-top: 60px; /* Ajusta el espacio para la barra de navegación fija */
+    }
+    .navbar-brand img {
+      max-height: 40px;
+    }
+    .navbar {
+      padding: 0.5rem 1rem;
+    }
+    .navbar-nav .nav-link {
+      color: #fff;
+    }
+    .navbar-toggler {
+      border-color: #fff;
+    }
+    .navbar-toggler-icon {
+      background-color: #fff;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px; /* Espacio entre las imágenes */
+    }
+    .item {
+      width: 100%; /* Ajusta el ancho de cada imagen en dispositivos móviles */
+      margin-bottom: 20px;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    img:hover {
+      transform: scale(1.1); /* Efecto de escala al pasar el ratón */
+    }
+    h3 {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+    p {
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLvJcJlPrNFfsMlEkuztTD0mQ_lNS7N8Cs7kIkban7NzFHxaSylmSYDMSbddtlcIWgY5No9TqhQpFpifnr7YlDtE6ZAEZHdmlmoZ28HMII5au_5zU9T3uSBlSTr_xukMXrjN1coLuSXN9cGWxv9_FJH5LByWK0b8M36LFE9vTVOe7gf9bs7RMYRABnH_Qq/s100/YQ%20WEB%20LOGO.png" alt="Logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#inicio">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#servicios">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portafolio">Portafolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacto">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#disenos">Diseños</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sección de Héroe</title>
+<style>
+/* Estilos generales */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Estilo para el contenedor principal */
+.hero-container {
+  position: relative;
+  height: 100vh; /* Altura al 100% del viewport (pantalla) */
+  background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEig8qRVU8cTiJz0X9mYiPATITF27Ck0uFYlmygRz_T6hs6eYLUjM0z6tVhKS6JUQVndd1qVpCzrMhyphenhyphenbZBNWC2zVPJKXE3eQ_DwCpn9xBGyjk48yPJw8w6mBN3fvVHg7NnlN6r2e9kV0ZMsewxc7buaSmTXVfNdvd1dgyg-wb-JSl9cNSO98r8Ycw00nDYXh/s4783/iiiiiiiii.png'); /* URL de la imagen de fondo por defecto */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+/* Estilos para la contenido superpuesto */
+.hero-content {
+  position: absolute;
+  top:  40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80%; /* Ancho máximo del contenido */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Estilos para el título */
+.hero-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+/* Estilos para la descripción */
+.hero-description {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Estilos para el botón */
+.hero-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  background-color: #007bff; /* Color del botón */
+  border-radius: 5px;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+  .hero-container {
+    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoYtNUE4EfwX_iuPOPdhdssnjAucddxdAF2_Pj2agfOVDMH0Dhyphenhyphenb_F6QrQuuwWEtE3tIlEdnJsx10RbtdryzOkud0QFpi47e_J0QABNQ0Ev_i3kHsbsDkr6Y8z6SfUopP3wyj6720Zx3f7_IqWcRx59z8UlCDcDW9gOfovKmpQP-tVSyZVH1bdhXFPw1xb/s2129/88889992222.png'); /* Nueva URL de la imagen de fondo para dispositivos móviles */
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="hero-container">
+  <div class="hero-content">
+    <h1 class="hero-title">INVIERTE EN TU MARCA</h1>
+    <p class="hero-description">Dale a tus clientes la oportunidad de conocerte.</p>
+    <a href="#" class="hero-button">Más información</a>
+  </div>
+</div>
+
+<!-- Sección de Portafolio -->
+<section id="portafolio" class="section-bg">
+  <h2 class="text-center mb-4"></h2>
+  <div class="row">
+    <div class="col-12 col-md-4 mb-4">
+      <div class="portfolio-item text-center position-relative">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkMy63JW8vI_MYynayknyuXB7tDxTmAOJyzAr6LeeDhibC6WX3BbrnjIeXBRuIgLutAyZeuqc9K7zgE5dwBpOcxKTVndVsxKV0sc1UhaxZr2nYZbFyYkBXSv64GIPbFbNSB_3z2_AWuWrDwiSz-b3V1zv_wA3IwcwLi_ABnYYY3_SvqiEu-zuyXkCh0HaN/s2198/web1111112.png" alt="Proyecto 1">
+        <a href="pagina1.html" class="btn btn-info portfolio-btn">Ver Detalles</a>
+      </div>
+    </div>
+    <div class="col-12 col-md-4 mb-4">
+      <div class="portfolio-item text-center position-relative">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkMy63JW8vI_MYynayknyuXB7tDxTmAOJyzAr6LeeDhibC6WX3BbrnjIeXBRuIgLutAyZeuqc9K7zgE5dwBpOcxKTVndVsxKV0sc1UhaxZr2nYZbFyYkBXSv64GIPbFbNSB_3z2_AWuWrDwiSz-b3V1zv_wA3IwcwLi_ABnYYY3_SvqiEu-zuyXkCh0HaN/s2198/web1111112.png" alt="Proyecto 2">
+        <a href="pagina2.html" class="btn btn-info portfolio-btn">Ver Detalles</a>
+      </div>
+    </div>
+    <div class="col-12 col-md-4 mb-4">
+      <div class="portfolio-item text-center position-relative">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkMy63JW8vI_MYynayknyuXB7tDxTmAOJyzAr6LeeDhibC6WX3BbrnjIeXBRuIgLutAyZeuqc9K7zgE5dwBpOcxKTVndVsxKV0sc1UhaxZr2nYZbFyYkBXSv64GIPbFbNSB_3z2_AWuWrDwiSz-b3V1zv_wA3IwcwLi_ABnYYY3_SvqiEu-zuyXkCh0HaN/s2198/web1111112.png" alt="Proyecto 3">
+        <a href="pagina3.html" class="btn btn-info portfolio-btn">Ver Detalles</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .portfolio-item {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .portfolio-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    z-index: 1;
+  }
+
+  /* Estilos para dispositivos móviles */
+  @media (max-width: 767px) {
+    .portfolio-btn {
+      position: relative;
+      display: block;
+      width: 80%; /* Ancho del botón ajustado para dispositivos móviles */
+      margin: 2px auto 3; /* Margen superior automático */
+    }
+  }
+</style>
+
+<!-- Bootstrap JS y jQuery (opcional) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
